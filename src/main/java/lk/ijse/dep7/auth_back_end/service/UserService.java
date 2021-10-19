@@ -4,9 +4,11 @@ import lk.ijse.dep7.auth_back_end.dto.UserDTO;
 
 import java.sql.*;
 
-public class UserService {private Connection connection;
+public class UserService {
+    private Connection connection;
 
     public UserService(Connection connection) {
+
         this.connection = connection;
     }
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context >
+
+    <Resource name="jdbc/cp" auth="Container" type="javax.sql.DataSource"
+              maxTotal="100"  username="root" password="whale" driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/auth_database"/>
+
+
+</Context>
