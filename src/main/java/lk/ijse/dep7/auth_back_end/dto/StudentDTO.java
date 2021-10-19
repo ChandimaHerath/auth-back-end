@@ -1,10 +1,11 @@
 package lk.ijse.dep7.auth_back_end.dto;
 
-public class StudentDTO {
+import java.io.Serializable;
+
+public class StudentDTO implements Serializable {
     String id;
     String name;
     String address;
-
     public StudentDTO() {
     }
 
@@ -36,5 +37,14 @@ public class StudentDTO {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "StudentDTO{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                '}';
     }
 }
