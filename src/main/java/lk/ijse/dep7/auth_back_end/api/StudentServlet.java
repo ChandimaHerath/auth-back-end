@@ -27,7 +27,10 @@ private DataSource dataSource;
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+
         try (Connection connection = dataSource.getConnection()) {
+            /*TO Do: Remove in the future*/
+            SecurityContext.setPrincipal(new UserService(connection).authenticate("admin","admin"));
 
             StudentService studentService = new StudentService(connection);
             List<StudentDTO> students = studentService.getAllStudents();

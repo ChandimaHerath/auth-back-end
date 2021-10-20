@@ -6,7 +6,7 @@ public class SecurityContext {
     private static ThreadLocal<UserDTO> principal = new ThreadLocal<>();
 
     public static UserDTO getPrincipal() {
-        if (principal.get() == null) throw new RuntimeException("There is no principal");
+        if (principal.get() == null) throw new RuntimeException("There is no principal!!!!!");
 
         return principal.get();
     }
