@@ -10,4 +10,14 @@
         <res-auth>Container</res-auth>
     </resource-ref>
 
+    <filter-mapping>
+        <filter-name>CORSFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>SecurityFilter</filter-name>
+        <url-pattern>/students/*</url-pattern>
+    </filter-mapping>
+
 </web-app>
